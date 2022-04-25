@@ -24,22 +24,25 @@ Docker registry |  [Link](https://hub.docker.com/repository/docker/eduardods/cha
 ## 3 - Folders explain under the project
 Folder | Description
 :---- | :---------- 
-application | contain all microservice source code.
-docker | contain Dockerfile to build and Docker Image.
-kubernetes | contain all Kubernetes artefacts to deploy an application.
-terraform | contain all artefacts to provisisoning an EKS cluster on AWS cloud.
+application | Contain all microservice source code.
+docker | Contain Dockerfile to build and Docker Image.
+kubernetes | Contain all Kubernetes artefacts to deploy an application.
+terraform | Contain all artefacts to provisisoning an EKS cluster on AWS cloud.
 
 
 ## 4 - How it work, step by step
 Sub-item | Description | Action 
 :----  | :---------- | :----
-4.1 | Before start the actions, you will need to install some tools on your computer. | -
-4.2 | Create a Kubernetes cluster. Navigate to Terraform folder and execute the commands below | terraform init; terraform validate; terraform plan; terraform apply
-4.3 | Connect directly on EKS cluster. For this, use the official documentation by AWS. | [Link](https://aws.amazon.com/pt/premiumsupport/knowledge-center/eks-cluster-connection/)
-4.4 | Create a namespace under the EKS cluster to isolate your microservice | `kubectl create namespace challenge`
-4.5 | Deploy a Kubernetes service | `kubectl apply -f api-challenge-ms-service.yaml -n challenge`
-4.6 | Deploy a Kubernetes deployment/pod | `kubectl apply -f api-challenge-ms-deployment.yaml -n challenge`
-4.7 | Verify if your pod was created | `kubectl get pods -n challenge`
+4.1 | Before start the actions, you will need to install some tools on your computer. | [Link](pre-requirements.MD)
+4.2 | Create EKS cluster. Navigate to Terraform folder and execute the commands to initialize the project | `terraform init`
+4.3 | Create EKS cluster. Navigate to Terraform folder and execute the commands to validate the project | `terraform validate`
+4.4 | Create EKS cluster. Navigate to Terraform folder and execute the commands to plan the project | `terraform plan`
+4.5 | Create EKS cluster. Navigate to Terraform folder and execute the commands to execute the project | `terraform apply`
+4.6 | Connect directly on EKS cluster. For this, use the official documentation by AWS. | [Link](https://aws.amazon.com/pt/premiumsupport/knowledge-center/eks-cluster-connection/)
+4.7 | Create a namespace under the EKS cluster to isolate your microservice | `kubectl create namespace challenge`
+4.8 | Deploy a Kubernetes service | `kubectl apply -f api-challenge-ms-service.yaml -n challenge`
+4.9 | Deploy a Kubernetes deployment/pod | `kubectl apply -f api-challenge-ms-deployment.yaml -n challenge`
+4.10 | Verify if your pod was created | `kubectl get pods -n challenge`
 
 ## 5 - The result
 5.1 - Execute the command: `kubectl get svc -n challenge`

@@ -11,6 +11,7 @@
   "dependencies": {
     "@supercharge/request-ip": "^1.2.0",
     "express": "^4.17.3",
+    "ip": "^1.1.5",
     "ipware": "^2.0.0",
     "koa": "^2.13.4",
     "request": "^2.88.2",

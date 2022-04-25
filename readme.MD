@@ -34,7 +34,7 @@ Folder terraform: contain all artefacts to provisisoning an EKS cluster on AWS c
 ## 4 - How it work, step by step
 Follow the instructions like below to deploy an application:
 
-4.1 - Before start the actions, you will need to install some tools on your computer. Follow the instructions using the file "pre-requirements" on root folder.
+4.1 - Before start the actions, you will need to install some tools on your computer. Follow the instructions using the file [pre-requirements](docs/pre-requirements.md) on root folder.
 
 4.2 - Create a Kubernetes cluster:
     Navigate to Terraform folder and execute the commands below:
@@ -71,7 +71,7 @@ The result, may be like bellow:
 
 
 NAME                       | TYPE           | CLUSTER-IP   | EXTERNAL-IP     | PORT(S)        | AGE
--------------------------- | -------------- | ------------ | --------------- | -------------- | ----
+:------------------------- | :------------- | :----------- | :-------------- | :------------- | ----
 api-challenge-ms-service   | LoadBalancer   | 10.2.0.120   | 20.201.46.144   | 80:31403/TCP   | 16m
 
 5.2 - Open your browser, get the attribute "EXTERNAL-IP" try to access using address "http://EXTERNAL-IP/challenge":

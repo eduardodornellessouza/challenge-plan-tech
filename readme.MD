@@ -34,7 +34,7 @@ Folder terraform: contain all artefacts to provisisoning an EKS cluster on AWS c
 ## 4 - How it work, step by step
 Follow the instructions like below to deploy an application:
 
-4.1 - Before start the actions, you will need to install some tools on your computer. Follow the instructions using the file [pre-requirements](docs/pre-requirements.md) on root folder.
+4.1 - Before start the actions, you will need to install some tools on your computer. Follow the instructions using the file [pre-requirements](pre-requirements.MD) on root folder.
 
 4.2 - Create a Kubernetes cluster:
     Navigate to Terraform folder and execute the commands below:

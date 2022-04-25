@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: api-challenge-ms
+  name: api-challenge-ms-service
   labels:
-    app: api-challenge-ms
+    app: api-challenge-ms-service
 spec:
   selector:
-    app: api-challenge-ms
+    app: api-challenge-ms-service
   ports:
     - protocol: TCP
       port: 80
-  type: ClusterIP
+  type: LoadBalancer

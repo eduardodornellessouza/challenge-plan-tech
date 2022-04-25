@@ -7,4 +7,4 @@ RUN npm install express
 RUN npm install ip
 COPY . .
 EXPOSE 80
-CMD [ "node", "outro.js" ]
+CMD [ "node", "index.js" ]

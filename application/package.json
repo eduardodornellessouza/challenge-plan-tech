@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-api-rest",
+  "version": "1.0.0",
+  "description": "test chalenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test spec\" && exit 1"
+  },
+  "author": "Eduardo Dornelles Souza",
+  "license": "ISC",
+  "dependencies": {
+    "@supercharge/request-ip": "^1.2.0",
+    "express": "^4.17.3",
+    "ipware": "^2.0.0",
+    "koa": "^2.13.4",
+    "request": "^2.88.2",
+    "request-ip": "^2.1.3"
+  }
+}

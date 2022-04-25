@@ -18,8 +18,11 @@ Folder terraform: contain all artefacts to provisisoning an EKS cluster on AWS c
 ## Challenge explanation
 ### - Level 1 - Create a simple microservice in any programming language
 Description: https://github.com/Plan-A-Technologies/DevOps-Challenge-Level-1
+
 Was build an simple application using NodeJs wich return the curl get command in json format like below:
+
 The code is in application folder.
+
 [
   {
     "timestamp": "Sat Apr 23 2022 00:48:58 GMT-0300 (Horário Padrão de Brasília)",
@@ -31,5 +34,7 @@ The code is in application folder.
 
 ### - Level 2 - Create an EKS cluster using Terraform, AWS CloudFormation or AWS CDK
 Description: https://github.com/Plan-A-Technologies/DevOps-Challenge-Level-2
+
 Was created a terraform code to deploy VPC with 2 private subnets and 2 public subnets + EKS deploy.
+
 The code is in terraform folder.

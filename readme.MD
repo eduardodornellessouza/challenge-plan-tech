@@ -1,3 +1,18 @@
+echo "# challenge-plan-tech" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+
+git remote add origin https://github.com/eduardodornellessouza/challenge-plan-tech.git
+git push -u origin main
+
+git remote add origin https://github.com/eduardodornellessouza/challenge-plan-tech.git
+git branch -M main
+git push -u origin main
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
 # Cookbook - Challenge Plan Tech
 Folder application: contain all microservice source code 
 Folder docker: contain Dockerfile to build and Docker Image

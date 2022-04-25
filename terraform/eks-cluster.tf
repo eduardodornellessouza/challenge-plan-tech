@@ -26,7 +26,7 @@ module "eks" {
       max_capacity     = 20
       min_capacity     = 2
 
-      instance_types = ["c5.xlarge"]
+      instance_types = ["t3a.large"]
       k8s_labels = {
         Environment = "production"
         Hardware  = "cpu_performance"
@@ -40,7 +40,7 @@ module "eks" {
       max_capacity     = 20
       min_capacity     = 2
 
-      instance_types = ["r5.large"]
+      instance_types = ["t3a.large"]
       k8s_labels = {
         Environment = "production"
         Hardware  = "ram_performance"
@@ -49,22 +49,6 @@ module "eks" {
         max_unavailable_percentage = 50 # or set `max_unavailable`
       }
     }
-    workers_3_group = {
-      desired_capacity = 2
-      max_capacity     = 20
-      min_capacity     = 2
-
-      instance_types = ["t3.xlarge"]
-      capacity_type  = "SPOT"
-      k8s_labels = {
-        Environment = "production"
-        Hardware  = "database_performance"
-      }
-      update_config = {
-        max_unavailable_percentage = 50 # or set `max_unavailable`
-      }
-    }
-
   }
 }
 

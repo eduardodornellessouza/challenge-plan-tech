@@ -69,10 +69,12 @@ Verify if your pod was created:
 
 The result, may be like bellow:
 
-NAME                       TYPE           CLUSTER-IP   EXTERNAL-IP     PORT(S)        AGE
-api-challenge-ms-service   LoadBalancer   10.2.0.120   20.201.46.144   80:31403/TCP   16m
 
-5.2 - Open your browser, get the attribute <EXTERNAL-IP> and make a call by addres http://<EXTERNAL-IP>/challenge:
+NAME                       | TYPE           | CLUSTER-IP   | EXTERNAL-IP     | PORT(S)        | AGE
+-------------------------- | -------------- | ------------ | --------------- | -------------- | ----
+api-challenge-ms-service   | LoadBalancer   | 10.2.0.120   | 20.201.46.144   | 80:31403/TCP   | 16m
+
+5.2 - Open your browser, get the attribute "EXTERNAL-IP" try to access using address "http://EXTERNAL-IP/challenge":
 The result must be like below:
 
 `[
@@ -83,3 +85,6 @@ The result must be like below:
     "visitorip": "10.201.22.202"
   }
 ]`
+
+![image](https://user-images.githubusercontent.com/52758765/165142635-393358de-af42-47b1-b90a-214f824b3d15.png)
+

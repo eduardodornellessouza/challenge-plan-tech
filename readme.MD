@@ -24,12 +24,19 @@ Was build an simple application using NodeJs wich return the curl get command in
 The code is in application folder.
 
 [
+
   {
+
     "timestamp": "Sat Apr 23 2022 00:48:58 GMT-0300 (Horário Padrão de Brasília)",
+
     "hostname": "MacBook-Air.local",
+
     "engine": "9.6.180.15-node.12",
+
     "ip_visitor": "179.179.80.41"
+
   }
+  
 ]
 
 ### - Level 2 - Create an EKS cluster using Terraform, AWS CloudFormation or AWS CDK

@@ -46,14 +46,23 @@ Follow the instructions like below to deploy an application:
 4.3 - Connect directly on EKS cluster. For this, use the official documentation by AWS: https://aws.amazon.com/pt/premiumsupport/knowledge-center/eks-cluster-connection/
 
 4.4 - Deploy microservice: 
+
     Navigate to kubernetes folder and execute the commands below:
+
     Create a namespace under the EKS cluster to isolate your microservice:
+
         kubectl create namespace challenge
+
     Deploy a Kubernetes service
+
         kubectl apply -f api-challenge-ms-service.yaml -n challenge
+
     Deploy a Kubernetes deployment/pod
+
         kubectl apply -f api-challenge-ms-deployment.yaml -n challenge
+
     Verify if your pod was created:
+
         kubectl get pods -n challenge
 
 ## 5 - The result
@@ -62,6 +71,7 @@ After execute previous tasks, you need to test your microservice.
 5.1 - Execute the command "kubectl get svc -n challenge". The result, may be like bellow:
 
 NAME                       TYPE           CLUSTER-IP   EXTERNAL-IP     PORT(S)        AGE
+
 api-challenge-ms-service   LoadBalancer   10.2.0.120   20.201.46.144   80:31403/TCP   16m
 
 5.2 - Open your browser, get the attribute <EXTERNAL-IP> and make a call by addres http://20.201.46.144/challenge:
